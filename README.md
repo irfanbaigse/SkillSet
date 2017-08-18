@@ -27,10 +27,13 @@ SkillSet uses [Baidu FEX team](http://fex.baidu.com/)'s [Kity](https://github.co
       "name": "Irfan Baig",
       "skillset": {
         "PHP": 4,
-        "Assembly Language": 2,
-        "C#": 1,
-        "C++": 1,
-        "Dart": 1,
+        "Python": 1,
+        "JavaScript": {
+          ".level": 3,
+          "CoffeeScript": 1,
+          "ES6": 2,
+          "TypeScript": 3
+        },
         "Data Store": {
           "NoSQL": {
             "MongoDB": 2,
@@ -43,50 +46,31 @@ SkillSet uses [Baidu FEX team](http://fex.baidu.com/)'s [Kity](https://github.co
             "SQL": 3
           }
         },
-        "Front-end": {
-          "Angular 2.0": 0,
-          "AngularJS": 1,
-          "Backbone/Marionette": 0,
-          "CSS": {
-            ".level": 2,
-            "Bootstrap": 2,
-            "SASS/SCSS": 2,
-            "Semantic UI": 1
-          },
-          "HTML": 3,
-          "Polymer": 0,
-          "React": 1,
-          "Underscore/Lo-Dash": 0,
-          "jQuery": 3,
-          "webpack": 0
+        "Tools": {
+          "PHPStorm": 3
         },
-        "Go": 2,
         "Operation": {
           "Docker": 3,
           "Linux": 3,
           "Shell": 2,
           "Vagrant": 1
         },
-        "JavaScript": {
+        "Search engines":{
+          "Elasticsearch": 1
+        },
+        "Queue systems": {
+          "RabbitMQ": 2
+        },
+        "PHP Frameworks": {
           ".level": 3,
-          "CoffeeScript": 1,
-          "ES6": 3,
-          "Meteor": 2,
-          "TypeScript": 3
+          "Laravel": 3,
+          "Symfony2": 3,
+          "Yii2": 3,
+          "Cakephp": 3,
+          "CodeIgnitor": 3
         },
-        "Mobile": {
-          "Android": 0,
-          "Cordova": 1,
-          "iOS": 0,
-          "jQuery Mobile": 0
-        },
-        "Node.js": {
-          ".level": 3,
-          "Connect": 3,
-          "Express": 3,
-          "Socket.IO": 2
-        },
-        "Python": 1
+        "Go": 2,
+        "C": 1
       }
     }
 
