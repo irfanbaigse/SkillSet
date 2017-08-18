@@ -1,7 +1,7 @@
 # SkillSet
 A simple JSON format for skill sets and a mind map generator
 
-[Demo](http://nexzhu.github.io/SkillSet/)
+[Demo](http://irfanbaig.github.io/)
 
 ## Background
 
@@ -24,46 +24,48 @@ SkillSet uses [Baidu FEX team](http://fex.baidu.com/)'s [Kity](https://github.co
 ### JSON
 
     {
-      "name": "Nex Zhu",
+      "name": "Irfan Baig",
       "skillset": {
+        "PHP": 4,
         "Assembly Language": 2,
         "C#": 1,
-        "C++": 2,
+        "C++": 1,
         "Dart": 1,
         "Data Store": {
           "NoSQL": {
             "MongoDB": 2,
             "Neo4j": 1,
-            "Redis": 3
+            "Redis": 2
           },
           "RDBMS": {
-            "MySQL": 2,
+            "MySQL": 3,
             "PostgreSQL": 1,
-            "SQL": 2
+            "SQL": 3
           }
         },
         "Front-end": {
-          "Angular 2.0": 2,
-          "AngularJS": 2,
-          "Backbone/Marionette": 3,
+          "Angular 2.0": 0,
+          "AngularJS": 1,
+          "Backbone/Marionette": 0,
           "CSS": {
-            ".level": 3,
+            ".level": 2,
             "Bootstrap": 2,
             "SASS/SCSS": 2,
             "Semantic UI": 1
           },
           "HTML": 3,
-          "Polymer": 1,
+          "Polymer": 0,
           "React": 1,
-          "Underscore/Lo-Dash": 3,
+          "Underscore/Lo-Dash": 0,
           "jQuery": 3,
-          "webpack": 2
+          "webpack": 0
         },
         "Go": 2,
-        "Java": {
-          ".level": 3,
-          "Hibernate": 2,
-          "Spring": 2
+        "Operation": {
+          "Docker": 3,
+          "Linux": 3,
+          "Shell": 2,
+          "Vagrant": 1
         },
         "JavaScript": {
           ".level": 3,
@@ -72,12 +74,11 @@ SkillSet uses [Baidu FEX team](http://fex.baidu.com/)'s [Kity](https://github.co
           "Meteor": 2,
           "TypeScript": 3
         },
-        "Lua": 1,
         "Mobile": {
-          "Android": 1,
+          "Android": 0,
           "Cordova": 1,
-          "iOS": 1,
-          "jQuery Mobile": 3
+          "iOS": 0,
+          "jQuery Mobile": 0
         },
         "Node.js": {
           ".level": 3,
@@ -85,15 +86,7 @@ SkillSet uses [Baidu FEX team](http://fex.baidu.com/)'s [Kity](https://github.co
           "Express": 3,
           "Socket.IO": 2
         },
-        "Operation": {
-          "Docker": 1,
-          "Linux": 1,
-          "Shell": 1,
-          "Vagrant": 1
-        },
-        "Pascal": 2,
-        "Python": 1,
-        "Visual Basic": 1
+        "Python": 1
       }
     }
 
