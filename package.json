@@ -5,7 +5,7 @@
   "main": "",
   "devDependencies": {
     "webpack": "^5.112.1",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^7.2.3"
   },
   "scripts": {
     "build": "webpack && cp docs/skill-set.json public/skill-set.json",
