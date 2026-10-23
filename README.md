@@ -1,7 +1,9 @@
 # SkillSet
 A simple JSON format for skill sets and a mind map generator
 
-[Demo](http://irfanbaig.github.io/)
+[![Build and deploy demo](https://github.com/irfanbaigse/SkillSet/actions/workflows/pages.yml/badge.svg)](https://github.com/irfanbaigse/SkillSet/actions/workflows/pages.yml)
+
+[Live demo](https://irfanbaigse.github.io/SkillSet/) · Forked from [NexZhu/SkillSet](https://github.com/NexZhu/SkillSet)
 
 ## Background
 
@@ -13,67 +15,39 @@ SkillSet uses [Baidu FEX team](http://fex.baidu.com/)'s [Kity](https://github.co
 
 ## Skill Levels
 
+    0: Not rated yet (shown without a level badge)
     1: Novice
     2: Intermediate
     3: Advanced
     4: Expert
     5: Master
 
-## Example
+## My Skill Set
 
 ### JSON
+
+[`docs/skill-set.json`](docs/skill-set.json). Nested objects are categories, numbers are levels, and `.level` sets a category's own level:
 
     {
       "name": "Irfan Baig",
       "skillset": {
         "PHP": 4,
-        "Python": 1,
-        "JavaScript": {
-          ".level": 3,
-          "CoffeeScript": 1,
-          "ES6": 2,
-          "TypeScript": 3
-        },
-        "Data Store": {
-          "NoSQL": {
-            "MongoDB": 2,
-            "Neo4j": 1,
-            "Redis": 2
-          },
-          "RDBMS": {
-            "MySQL": 3,
-            "PostgreSQL": 1,
-            "SQL": 3
-          }
-        },
-        "Tools": {
-          "PHPStorm": 3
-        },
-        "Operation": {
-          "Docker": 3,
-          "Linux": 3,
-          "Shell": 2,
-          "Vagrant": 1
-        },
-        "Search engines":{
-          "Elasticsearch": 1
-        },
-        "Queue systems": {
-          "RabbitMQ": 2
-        },
         "PHP Frameworks": {
           ".level": 3,
-          "Laravel": 3,
-          "Symfony2": 3,
-          "Yii2": 3,
-          "Cakephp": 3,
-          "CodeIgnitor": 3
-        },
-        "Go": 2,
-        "C": 1
+          "Laravel": 3
+        }
       }
     }
 
 ### Generated Mind Map
 
 ![skill-set.png](docs/skill-set.png)
+
+## Run locally
+
+    npm ci
+    npm start
+
+`npm run build` bundles `src/` into `public/bundle.js` and copies `docs/skill-set.json` next to it; `npm start` also serves `public/`. Use **Save as PNG** in the demo to regenerate `docs/skill-set.png`.
+
+Pushing to `master` deploys `public/` to GitHub Pages.
