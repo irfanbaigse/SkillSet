@@ -26,7 +26,7 @@ jobs:
       - name: Validate skill-set.json
         run: node -e "JSON.parse(require('fs').readFileSync('docs/skill-set.json'))"
       - run: npm run build
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: public
 
