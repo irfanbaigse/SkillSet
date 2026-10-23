@@ -3,27 +3,22 @@
   "version": "0.1.0",
   "description": "A simple JSON format for skill sets and a mind map generator",
   "main": "",
-  "dependencies": {
-    "kity": "github:fex-team/kity#v2.0.5",
-    "kityminder": "github:fex-team/kityminder-core#v1.4.45"
-  },
   "devDependencies": {
-    "babel-core": "^6.3.13",
-    "babel-loader": "^6.2.0",
-    "babel-preset-es2015": "^6.3.13",
-    "webpack": "^5.47.0"
+    "webpack": "^5.112.1",
+    "webpack-cli": "^6.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack && cp docs/skill-set.json public/skill-set.json",
+    "start": "npm run build && npx --yes serve public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NexZhu/SkillSet.git"
+    "url": "git+https://github.com/irfanbaigse/SkillSet.git"
   },
   "author": "Nex Zhu <nexzhu@gmail.com> (https://nexzhu.github.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NexZhu/SkillSet/issues"
+    "url": "https://github.com/irfanbaigse/SkillSet/issues"
   },
-  "homepage": "https://github.com/NexZhu/SkillSet#readme"
+  "homepage": "https://irfanbaigse.github.io/SkillSet/"
 }

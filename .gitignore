@@ -35,3 +35,7 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# Build output
+public/bundle.js
+public/skill-set.json
